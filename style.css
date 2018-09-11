@@ -3,6 +3,67 @@
 }
 
 .tableWrapper {
-  max-height: 400px;
-  overflow: auto;
+	max-height: 400px;
+	overflow: auto;
+	border-width: 3px;
+	border-style: solid;
+	border-color: Orange;
+}
+
+.jumbotron {
+    color: Orange;
+    background-color: SteelBlue;
+    border-width: 3px;
+	border-style: solid;
+	border-color: Orange;
+}
+
+.addForm{
+    background-color: SteelBlue;
+    border-width: 3px;
+	border-style: solid;
+	border-color: Orange;
+	border-radius: 5px;
+}
+
+.whitee {
+	color: White;
+}
+
+.button1 {
+    background-color: SteelBlue; 
+    border-width: 1px;
+	border-style: solid;
+	border-color: White;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.widthReduced {
+	margin: 0 auto;
+	width: 50%;
+}
+
+body {
+  height: 100%;
+  background-color: LightSkyBlue;
+  color: #eaeaea;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+}
+
+.table {
+	color: White;
+}
+
+.table-striped tbody > tr:nth-child(odd) > td, .table-striped tbody > tr:nth-child(odd) > th {
+    background-color: SteelBlue;
 }
