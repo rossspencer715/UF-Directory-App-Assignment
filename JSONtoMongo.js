@@ -8,14 +8,21 @@ var fs = require('fs'),
     Schema = mongoose.Schema, 
     Listing = require('./ListingSchema.js'), 
     config = require('./config');
+    json = require('./listings.json');
+
 
 /* Connect to your database */
+mongoose.connect(config.db.)
 
 /* 
   Instantiate a mongoose model for each listing object in the JSON file, 
   and then save it to your Mongo database 
  */
-
+Listing.insertMany(json.entries, function(err,result){
+    if(err) 
+      throw err;
+    mongoose.disconnect();
+});
 
 /* 
   Once you've written + run the script, check out your MongoLab database to ensure that 
