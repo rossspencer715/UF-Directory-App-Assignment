@@ -12,7 +12,7 @@ var fs = require('fs'),
 
 
 /* Connect to your database */
-mongoose.connect(config.db.)
+mongoose.connect(config.db.uri)
 
 /* 
   Instantiate a mongoose model for each listing object in the JSON file, 
