@@ -11,7 +11,6 @@ var fs = require('fs'),
     config = require('./config');
 
 /* Connect to your database */
-<<<<<<< HEAD
 mongoose.connect(config.db.uri);
 var connection = mongoose.connection;
 connection.on("connected", function(){
@@ -39,10 +38,6 @@ fs.readFile('listings.json','utf8',function(err,data){
       }
     });
   }
-
-=======
-mongoose.connect(config.db.uri)
->>>>>>> 05b2d24b6cb4e79cd5ee63c7a7d42d9919265cfc
 
 });
 
